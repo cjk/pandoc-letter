@@ -3,11 +3,12 @@
 [![Build Status](https://travis-ci.org/aaronwolen/pandoc-letter.svg?branch=master)](https://travis-ci.org/aaronwolen/pandoc-letter)
 [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
 
-**Authors**: [Aaron Wolen][aaron] and [Andrew Dunning][andrew]
+**Authors**: [Aaron Wolen][aaron], [Andrew Dunning][andrew] and [Claus Klingberg][cjk]
 
 This template allows you to write letters in Markdown and convert them to nice looking PDFs using [Pandoc][] and [LaTeX][]. It accepts arguments used in the LaTeX letter class, including:
 
 * opening
+* subject
 * closing
 * address
 * return-address
@@ -74,6 +75,9 @@ The following can be set either as variables when executing `pandoc` or added to
 `letterhead`
 :   Image file to be used as letterhead (requires the [wallpaper][] package), applied only to the first page.
 
+`subject`
+:   Short line of text appearing above the opening that indicates the intent or purpose of the letter
+
 `opening`
 :   Text for the salutation.
 
@@ -103,3 +107,4 @@ GPL-3 for pandoc-letter and the underlying [Pandoc template][latex-template].
 [pandoc-latex-variables]: http://pandoc.org/MANUAL.html#variables-for-latex
 [aaron]: http://aaronwolen.com
 [andrew]: http://andrewdunning.ca
+[cjk]: https://github.com/cjk
